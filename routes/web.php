@@ -33,6 +33,9 @@ Route::post('/account/edit/avatar', 'UserController@postAccountAvatar')->name('a
 Route::post('/account/edit/password','UserController@postAccountPassword')->name('account_password_edit');
 Route::post('/account/edit/info','UserController@postAccountInfo')->name('account_info_edit');
 
+Route::get('/aboutme', function(){
+    return view('aboutme');
+});
 
 // Ajax Apli Routers
 
